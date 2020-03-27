@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coding Interview Guide</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .navbar-dark .navbar-brand {
+            color: #cfcfcf;
+        }
+        .navbar-dark .navbar-brand:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        .navbar-dark .nav > li > a {
+            color: #cfcfcf;
+        }
+        .navbar-dark .nav > li > a:hover {
+            color: #ffffff;
+        }
+        .notes_link {
+            color: #cfcfcf;
+        }
+        .notes_link:hover {
+            color: #ffffff;
+        }
+        .spinner-grow {
+            align-items: center;
+        }
+        p {
+            background-color: #007bff;   
+        }
+    </style>
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-dark bg-primary fixed-top">
+        <div class="container">
+                    <a class="navbar-brand" href="{{  url_for('home') }}">CIG</a>
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link active" href="{{ url_for('home') }}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About</a></li>
+                    </ul>   
+            </div>
+        </nav>
+        
+        <div class="container mr-5 mt-4 pt-2 ">
+        <br><br>
+        <div class="bg-dark text-white">
+                <ul class="list-group">
+                    <li><h6 class="notes">TIME & SPACE COMPLEXITY</h6></li>
+                    <ul type="none">
+                        <li><a class="notes_link" href="https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O" target="_blank">Abdul Bari's Playlist ( 1 - 16 )</a></li>
+                    </ul>
+                    <br>
+                    <li><h6 class="notes">DATA STRUCTURES</h6></li>
+                    <ul type="none">
+                        <li><a class="notes_link" href="https://www.youtube.com/playlist?list=PLDV1Zeh2NRsB6SWUrDFW2RmDotAfPbeHu" target="_blank">William Fiset (Google Engineer) Playlist ( Python )</a></li>
+                        <li><a class="notes_link" href="https://www.youtube.com/playlist?list=PLsyeobzWxl7oRKwDi7wjrANsbhTX0IK0J" target="_blank">Telusko Playlist ( Java )</a></li>
+                        <li><a class="notes_link" href="https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P" target="_blank">mycodeschool Playlist ( C/C++ )</a></li>
+                    </ul>
+                    <br>
+                    <li><h6 class="notes">ALGORITHMS</h6></li>
+                    <ul >
+                        <li><h6 class="notes">MATH</h6></li>
+                        <ul type="none">
+                            <li><a class="notes_link" href="https://www.youtube.com/playlist?list=PLUl4u3cNGP60UlabZBeeqOuoLuj_KNphQ" target="_blank">MIT OCW 6.042J Mathematics for Computer Science Playlist</a></li>                
+                            <li><a class="notes_link" href="http://cp-algorithms.com/" target="_blank">Competitive Programming Algorithms (Algebra)</a></li>                
+                        </ul>
+                        <br>
+                        <li><h6 class="notes">PROGRAMMING PARADIGMS</h6></li>
+                        <ul >
+                            <li><h6 class="notes">RECURSION</h6></li>
+                            <ul type="none">
+                                <li><a class="notes_link" href="https://www.youtube.com/playlist?list=PL2_aWCzGMAwLz3g66WrxFGSXvSsvyfzCO" target="_blank">mycodeschool Playlist</a></li>
+                                <li><a class="notes_link" href="https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O" target="_blank">Abdul Bari's Playlist ( 18 - 29 )</a></li>
+                                <li><a class="notes_link" href="https://www.sparknotes.com/cs/recursion/whatisrecursion/section2/" target="_blank">Spark Notes on Types of Recursion</a></li>
+                                <li><a class="notes_link" href="https://raw.githubusercontent.com/CodeClub-JU/Introduction-to-Algorithms-CLRS/master/Introduction%20to%20Algorithms%20-%203rd%20Edition.pdf" target="_blank">Intoduction to Algorithms : Chapter 4</a></li>
+                            </ul>
+                            <br>
+                            <li><h6 class="notes">DYNAMIC PROGRAMMING</h6></li>
+                            <ul type="none">
+                                <li><a class="notes_link" href="https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O" target="_blank">Abdul Bari's Playlist ( 46 - 60 )</a></li>
+                                <li><a class="notes_link" href="https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb" target="_blank">MIT OCW 6.006 Introduction to Algorithms ( 19, 20-22, 26-27, 39-45 )</a></li>
+                                <li><a class="notes_link" href="https://www.youtube.com/playlist?list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr" target="_blank">Tushar Roy's Example Problems Playlist</a></li>
+                            </ul>
+                            <br>
+                            <li><h6 class="notes">DIVIDE AND CONQUER</h6></li>
+                            <ul type="none">
+                                <li><a class="notes_link" href="https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O" target="_blank">Abdul Bari's Playlist ( 18, 33 - 38 )</a></li>
+                            </ul>
+                            <br>
+                            <li><h6 class="notes">GREEDY</h6></li>
+                            <ul type="none">
+                                <li><a class="notes_link" href="https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O" target="_blank">Abdul Bari's Playlist ( 39 - 45 )</a></li>
+                            </ul>
+                            <br>
+                            <li><h6 class="notes">BRANCH AND BOUND</h6></li>
+                            <ul type="none">
+                                <li><a class="notes_link" href="https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O" target="_blank">Abdul Bari's Playlist ( 68 - 71 )</a></li>
+                            </ul>
+                            <br>
+                            <li><h6 class="notes">BACKTRACKING</h6></li>
+                            <ul type="none">
+                                <li><a class="notes_link" href="https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O" target="_blank">Abdul Bari's Playlist ( 63 - 67 )</a></li>
+                            </ul>
+                            <br>
+                        </ul>
+                    </ul>
+                    <li><h6 class="notes">GRAPHT THEORY</h6></li>
+                    <ul type="none">
+                        <li><a class="notes_link" href="https://www.youtube.com/playlist?list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P" target="_blank">William Fiset (Google Engineer) Playlist</a></li>
+                    </ul>
+                    <br>
+                    <li><h6 class="notes">OTHERS (STRING & BIT MANIPULATION)</h6></li>
+                    <ul type="none">
+                        <li><a class="notes_link" href="https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/tutorial/" target="_blank">Hackerearth Bit Manipulation Tutorial</a></li>
+                        <li><a class="notes_link" href="http://cp-algorithms.com/" target="_blank">Competitive Programming Algorithms (Algebra)</a></li>                
+                        <li><a class="notes_link" href="https://www.topcoder.com/community/competitive-programming/tutorials/a-bit-of-fun-fun-with-bits/" target="_blank">Topcoder Bit Manipulation Tutorial</a></li>
+                    </ul>
+                    <br>
+                    <li><h6 class="notes">PRACTICE SITES & INTERVIEW EXPERIENCES</h6></li>
+                    <ul type="none">
+                        <li><a class="notes_link" href="https://leetcode.com/" target="_blank">LeetCode</a></li>
+                        <li><a class="notes_link" href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></li>  
+                        <li><a class="notes_link" href="https://www.codechef.com/" target="_blank">Codechef</a></li>  
+                        <li><a class="notes_link" href="https://www.hackerrank.com/" target="_blank">HackerRank</a></li>  
+                    </ul>
+                </ul>
+                <br><br>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="spinner-grow text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <p class="text-center text-white">(c) 2020 . rafade</p>
+        
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CIG - About</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .navbar-dark .navbar-brand {
+            color: #cfcfcf;
+        }
+        .navbar-dark .navbar-brand:hover {
+            color: #ffffff;
+        }
+        .navbar-dark .nav > li > a {
+            color: #cfcfcf;
+        }
+        .navbar-dark .nav > li > a:hover {
+            color: #ffffff;
+        }
+        .notes_link {
+            color: #cfcfcf;
+        }
+        .notes_link:hover {
+            color: #ffffff;
+        }
+        p {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-dark bg-primary fixed-top">
+        <div class="container">
+                    <a class="navbar-brand" href="{{  url_for('home') }}">CIG</a>
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link active" href="{{ url_for('home') }}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About</a></li>
+                    </ul>   
+            </div>
+        </nav>
+        <div class="container mt-5 pt-5">
+            <p class="text-center">
+                The goal of this project is to curate the wonderful resources of Data Structures and Algorithms on the Internet.
+            </p>
+            <p class="text-center">
+                Know any other resource? Keep Sharing, Keep Learning.
+            </p>
+            <p class="text-center">
+                 gridstories14@gmail.com
+            </p>
+            <p class="text-center">
+                <img src="{{url_for('static', filename='j.png')}}" width="50px" height="50px" >
+            </p>
+            <div class="d-flex justify-content-center">
+                <div class="spinner-grow text-primary" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+        <p class="text-center text-white">(c) 2020 . rafade</p>
+</body>
+</html>
